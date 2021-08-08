@@ -44,9 +44,9 @@ print(coplist)
 #     plt.ylabel('cop')
 # plt.show()
 
-# for power in powerlist:
-#     power = power[0:4361:24]
-#     x = np.linspace(0, len(power), len(power))
-#     plt.plot(x, power)
-#     plt.legend(labels=['chiller1', 'chiller2', 'chiller3', 'chiller4'], loc='upper right')
-# plt.show()
+for power in powerlist:
+    power = power[0:4361:24]
+    x = np.linspace(0, len(power), len(power))
+    plt.plot(x, power)
+    plt.legend(labels=['chiller1', 'chiller2', 'chiller3', 'chiller4'], loc='upper right')
+plt.show()
