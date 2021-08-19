@@ -6,6 +6,7 @@ import torch.nn.functional as F
 from torch import nn
 from torch.utils.data import Dataset, DataLoader
 import preprocess
+
 input_dim = config.input_dim
 hidden_size = config.hidden_size
 batch_size = config.batch_size
